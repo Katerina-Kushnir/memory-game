@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory game</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <h1>Memory game</h1>
+        <div class="modal">
+            <div class="modal-start">
+                <input type="text" placeholder="Enter your name" id="name">
+                <button class="start-button button">Start game</button>
+            </div>
+        </div>
+
+        <div class="progress">
+            <div class="time"><h4>Time: </h4><span id="timer">00:00</span></div>
+            <div class="score"><h4>Score: </h4><span id="counter">0</span></div>
+        </div>
+        <div class="field"></div>
+        <div class="result">
+            <h4>Best result: </h4>
+            <div class="result-list"></div>
+        </div>
+
+        <div class="modal-win hide">
+            <div class="modal-win-close">
+                <h3>Congratulations, You won!</h3>
+                <p>Your result is <span id="count">0</span> moves in <span id="time">00:00</span> time</p>
+                <button class="new-game-button button">New game</button>
+            </div>
+        </div>
+
+        <footer>
+            <a href="https://rs.school/" target="_blank">
+                <img src="assets/img/logo_rs2.svg" alt="logo_rs2">
+            </a>
+            <span>2023</span>
+            <a href="https://github.com/Katerina-Kushnir" target="_blank">Katerina Kushnir</a>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
